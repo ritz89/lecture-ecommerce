@@ -91,11 +91,9 @@ class ProductImage extends StatelessWidget {
           Image(
               image:
                   NetworkImage('https://picsum.photos/200/?random=$rndSeed')),
-          Container(
-            child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [Text(nama), Text("Rp. $harga")]),
-          )
+          Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [Text(nama), Text("Rp. $harga")])
         ],
       ),
     );
